@@ -1,0 +1,12 @@
+<div class="personas">
+   <div *ngFor = "let persona of arrayPersonas; index as i;" [ngClass]="{persona: true, activo: (persona.formacion_superior), inactivo: (!persona.formacion_superior)}">
+        <h3>{{ persona.nombre }} {{ persona.apellido }}</h3>
+        <p>Edad: {{ persona.edad }}</p>
+        <p>Direccion: {{ persona.direccion }}</p>
+        <p>Telefono: {{ persona.telefono }}</p>
+        <button  (click)="onClick(persona.formacion_superior, i)"><label *ngIf="persona.formacion_superior; else oculto">Desactivar</label></button>
+        <ng-template #oculto>
+            Activar
+        </ng-template>
+    </div>
+</div>

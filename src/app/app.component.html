@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="form left">
+    <app-ingreso (personaisCreated)="onPersonaisCreated($event)"></app-ingreso>
+  </div>
+  <div class="form right">
+    <app-muestra [arrayPersonas]="arrayPersonas"></app-muestra>
+  </div>
+  <br>
+</div>

@@ -1,0 +1,23 @@
+<div class="formulario">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" [(ngModel)]="newPersona.nombre">
+    </div>
+    <div class="form-group">
+        <label>Apellido</label>
+        <input type="text" [(ngModel)]="newPersona.apellido">
+    </div>
+    <div class="form-group">
+        <label>Edad</label>
+        <input type="number" [(ngModel)]="newPersona.edad">
+    </div>
+    <div class="form-group">
+        <label>Dirección</label>
+        <input type="text" [(ngModel)]="newPersona.direccion">
+    </div>
+    <div class="form-group">
+        <label>Teléfono</label>
+        <input type="text" [(ngModel)]="newPersona.telefono">
+    </div>
+    <button class="btn" (click)="onClick()">Enviar</button>
+</div>
